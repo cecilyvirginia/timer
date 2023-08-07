@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timer.css">
+    
+ 
+</head>
+<body>
+    
+       
+       
+
+
+
+<div class="maindivision">
+    <div class="subdiv">
+        
+    
+    <div class="may">Black Friday Sale</div>
+    <div class="den">90% OFF</div>
+    <div class="web">Web Hosting+<b>FREE&nbsp;</b>Domain</div>
+  
+    
+    <!-- <h1 id="output"></h1>
+    <div class="flex">
+    <h1 id="hours"></h1>
+    <h1 id="minutes"></h1>
+    <h1 id="seconds"></h1>
+    </div> -->
+    <form action="formvalidation.html">
+        <button class="get">Get STARTED NOW</button>
+    </form>
+    <!-- <div class="hurry">Hurry Up <b>LIMITED TIME&nbsp;</b>Offer Only </div> -->
+    <h1 id="output"></h1>
+    <div class="flex">
+    <h1 id="hours"></h1>
+    <h1 id="minutes"></h1>
+    <h1 id="seconds"></h1>
+    </div>
+  
+</div></div>
+    <script>
+let tag=document.getElementById("output");
+let tag1=document.getElementById("hours");
+
+let tag2=document.getElementById("minutes");
+let tag3=document.getElementById("seconds");
+setInterval(()=>{
+let date=new Date();
+let hours=date.getHours() ;
+let minutes=date.getMinutes();
+let seconds=date.getSeconds();
+// total=hours+":"+minutes+":"+seconds;
+// tag.innerHTML=total;
+tag1.innerHTML=hours+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
+
+tag2.innerHTML=minutes+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
+
+tag3.innerHTML=seconds;
+},1000)
+</script>
+</body>
+</html>
